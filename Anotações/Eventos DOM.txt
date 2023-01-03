@@ -1,0 +1,21 @@
+Eventos DOM 
+
+<div> 
+
+mouseenter = passar o mouse dentro da div vai disparar um evento mouseenter
+
+mousemove = enquanto tiver movendo o mouse dentro da div, vai disparar esse evento
+
+mousedown = cliquei e segurei o mouse dispara o evento mousedown
+
+mouseup = Momento em que soltei o mouse
+
+click = apertar e soltar rapidamente
+
+mouseout = mover o mouse para fora
+
+Funções = É um conjunto de códigos ou linhas que vão ser executadas quando o evento ocorrer
+
+{bloco}
+
+ex : function { ação(parametros) } 

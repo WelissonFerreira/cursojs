@@ -1,0 +1,68 @@
+Operadores
+
+1- Aritméticos
+2- Atribuição
+3- Relacionais
+4- Lógicos
+5- Ternário
+
+Aritméticos =
+
++ = Soma
+- = Subtração
+* = Multiplicação
+/ = Divisão
+% = Resto da dvisão inteira
+** = Potência (Ex: 5² Cinco ao Quadrado)
+
+Tanto na programação quanto na matematica existe uma coisa chamada precedência de operadores. Ex: 5 + 3 / 2 é Igual a = 6.5, isso por que eles somam de acordo com a regra matemática, primeiro a divisão e depois a soma
+
+Agora, querenco eu somar primeiro 5 + 3 e didir por 2, se faz da seguinte maneira:
+
+(5 + 3) / 2 , ou seja , adciona-se parênteses, assim como a Matemática faz, pois colocando parênteses altera-se as sequencias, as regras;
+
+Ordem de Precedência dos Operadores Aritméticos = 
+1- ()
+2- **
+3- *, ,/ ,%
+4- +, -
+
+Atribuições Simples
+
+var a = 5 + 3 = 8
+
+var b = a % 5 = 3
+
+var c = 5 * b ** 2  = 45
+
+var d = 10 - a / 2 = 6
+
+var e = 6 * 2 / d = 2
+
+var f = b % e + 4 / e = 3 
+
+Auto-atribuições / simplificando
+
+var n = 3          
+
+n = n + 4 = n agora é 7    / n += 4
+
+n = n - 5 = n agora é 2    / n += 5 
+
+n = n * 4 = n agora é 8   / n *= 4
+
+n = n / 2 = n agora é 4     / n /= 2
+
+n = n ** 2 = n agora é 16  / n **= 2
+
+n = n % 5 = n  agora é 1   / n %= 5
+
+Incremento = 
+
+var x = 5
+
+x = x + 1
+
+x = x - 1 
+
+= x++ soma o numero +1 , x-- subtrai o número -1 

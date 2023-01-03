@@ -1,0 +1,6 @@
+DOM - Document Object Model = Ele é a vertente web do JavaScript pro qual a linguaguem foi criada
+
+- Arvore DOM
+
+- Manipulando DOM
+

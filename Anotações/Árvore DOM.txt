@@ -1,0 +1,44 @@
+Árvore DOM
+
+	   window
+		
+location / documento / history
+
+		html
+
+             head / body
+
+	 meta / title
+
+	h1 / p / p / div
+
+		strong
+
+comando : window.document.write(document.URL/charset/title)
+
+
+
+Selecionando
+
+getElementsByTagName()
+
+- por ID
+- por Nome
+- por Classe
+- por Seletor
+
+selecionar uma tag de HTML pelo JS >
+var p = window.document.getElementsByTagName('p')[0]
+
+
+window.document.write('Está escrito assim: ' + p1.innerText)
+
+mudar cor de uma tag CSS no JS >
+
+var corpo = window.document.body
+
+corpo.style.background = 'black'
+p1.style.color = 'blue'
+
+querySelector()
+querySelectorAll()

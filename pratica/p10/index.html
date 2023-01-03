@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Região do Brasil</title>
+    <style>
+
+        
+
+        p {
+            font-family: Arial black;
+        }
+
+        
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <h1>Qual região do Brasil você é?</h1>
+
+    <h3><br>Norte</br> <br>Nordeste</br> <br>Centro-Oeste</br> <br>Sudeste</br> <br> Sul</br></h3>
+
+    <p>Em qual estado você mora?</p> <input type="text" name="estado" id="estado">
+    <input type="button" value="verificar" onclick="confirmar()">
+    <div id="res"></div>
+
+    <script>
+        function confirmar() {
+
+            var lig = window.document.querySelector('input#estado')
+            var res = window.document.querySelector('div#res')
+            var estado = lig.value
+            res.innerHTML += `Seu Estado é ${estado}`
+        
+            if(estado == 'Alagoas' || estado == 'alagoas') {
+                res.innerHTML += `<p> Sua região é o Nordeste ${estado} </p>`
+
+            } else {
+              estado == 'Acre' || estado == 'acre'
+              res.innerHTML += `<p>Sua Região é o Norte </p>`;
+               
+            }
+          }
+      
+        
+      
+
+    
+
+
+
+    </script>
+    
+
+
+
+</body>
+</html>

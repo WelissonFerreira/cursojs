@@ -1,0 +1,5 @@
+Adcionar comentários em JavaScript: //
+
+Adcionar comentários em HTML5: <!... Comentário ...>
+
+Adcionar comentários em CSS3: /* Comentário */

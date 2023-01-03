@@ -1,0 +1,5 @@
+String > Número
+
+Number.parseInt(n) = Converte em numéros Inteiro
+Number.parseFloat(n) = Converter em Números em Reais (com virgula)
+Number(n) = O JS decide de acordo com o que ele recebe, se é número com virgula ele soma corretamente, se é inteiro ele soma normalmente (opção mais completa)

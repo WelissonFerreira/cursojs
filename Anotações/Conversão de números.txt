@@ -1,0 +1,11 @@
+Manipulando número:
+
+para fixar um número (casas decimais por exemplo) usa-se n1.toFixed(2)
+
+para trocar o "." por "," usa-se:
+
+n1.toFixed(2)replace('.', ',')
+
+para transformar em Real: 
+
+n1.toLocaleString('pt-BR, {style: 'currency', currency: 'BRL'})

@@ -1,0 +1,4 @@
+Número > String
+
+String(n)
+n.toString()

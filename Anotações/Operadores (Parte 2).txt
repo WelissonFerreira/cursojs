@@ -1,0 +1,48 @@
+Operadores (parte 2)
+
+Relacionais
+
+> - Maior que
+< - Menor que
+>= - Maior ou igual
+<= - Menor ou igual
+== - Identico
+!= - Diferente de
+
+5 > 2 true
+7 < 4 false
+8 >= 8 true
+9 <= 7 false
+5 == 5 true
+4 != 4 false
+
+mais exemplos:
+
+preço >= 200.50
+idade < 18
+curso == 'JavaScript'
+n1 != n2
+
+Identidade
+
+5 == 5 true
+5 == '5' true
+5 === '5' false (3 sinais de igualdade significa idêntico, tanto o valor como o tipo
+5 === 5 true
+
+Lógicos
+
+! negação = ex: Quero uma caneta, mais NÃO quero que seja da cor azul
+
+&& conjunção = ex: Quero uma caneta Azul e uma Vermelha
+
+|| disjunção  = ex: Eu quero uma caneta Azul ou Vermelha || = Alt + 124
+
+
+! Não 
+&& E
+|| Ou
+
+Ternário 
+?:
+teste? true: false

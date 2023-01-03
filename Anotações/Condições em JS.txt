@@ -1,0 +1,39 @@
+Condições em JavaScript
+
+Sequências
+
+var n = 3
+
+n += 2
+
+window.alert(n)
+
+= 5
+
+Condições
+
+Imagine você dirigindo um carro e para na pista e em frente existe dois caminhos a seguir, esquerda e direita, a condição se assemelha a isso. Se não pegar a direita, pega a esquerda, SE não pegar não pegar a esquerda, pega a direita.
+
+condição em JS a gente usa a estrutura 'if' = se / else= senão
+
+if (condição) {
+	true	
+
+} else {
+   false 
+}
+
+
+Tipos de Condição
+
+if (condição) {
+	true
+}
+    condição simples
+
+if (condição) {
+true
+
+} else {
+false
+}

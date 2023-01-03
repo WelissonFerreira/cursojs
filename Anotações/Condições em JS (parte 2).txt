@@ -1,0 +1,48 @@
+Condições (parte 2)
+
+Condições Aninhadas
+
+Condições dentro de condições, o que cria mais possibilidades.
+
+Condições Aninhadas : 
+
+if (cond1) {
+    bloco1
+
+} else {
+    if (cond2) {
+	bloco2
+
+} else {
+    bloco3
+}
+
+
+
+Para executar o bloco 2, a condição 1 precisa ser falsa.
+
+E se o bloco 1 e 2 forem falsos, podem entrar a condição 3
+
+
+
+
+}
+
+Condição Múltipla
+
+Tem a possibilidade não só do sim e do não, mais a possibilidade de valores FIXOS
+
+switch (expressão) {
+case valor1:
+break
+
+case valor2:
+break
+
+case valor3:
+break
+
+default
+break
+
+Aviso: É necessário o Break, não pode esquecê-lo!

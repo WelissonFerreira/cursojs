@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual sua região?</title>
+    <style>
+        body {
+
+        background-color: rgba(0, 255, 255, 0.671);    
+        }
+        p {
+            font-family: Arial ;
+        }
+        
+
+    </style>
+    
+</head>
+<body>
+    <h1>Qual sua região?</h1>
+    Digite o seu Estado: <input type="text" name="est" id="est">
+    <input type="button" value="Verificar" onclick="confirmar()">
+    <div id="res"></div>
+    <script>
+        function confirmar() {
+
+        var est = window.document.querySelector('input#est')
+        var res = window.document.querySelector('div#res')
+        var lig = est.value
+
+        res.innerHTML += `<p>Seu estado é <strong>${lig}</strong> </p>`
+
+        if(lig == 'Alagoas' || lig == 'alagoas') {
+            res.innerHTML += '<p>Sua região é o <strong>Nordeste</strong> </p>'
+
+        } else if (lig == 'Acre' || lig == 'acre') {
+            res.innerHTML += 'Sua região é o <strong>Norte</strong>'
+
+        } else if (lig == 'Goiás' || lig == 'goiás' || lig == 'Goias' || lig == 'goias') {
+            res.innerHTML += 'Sua região é o <strong>Centro-Oeste</strong>'
+        
+        } else if (lig == 'São Paulo' || lig == 'Sao Paulo' || lig == 'sao paulo' || lig == 'são paulo' || lig == 'Rio de Janeiro' || lig == 'rio de janeiro' || lig == 'Minas Gerais' || lig == 'minas gerais') {
+            res.innerHTML += 'Sua região é o <strong>Sudeste</strong>'
+        }  else {
+            lig == 'Rio Grande do Sul' || lig == 'rio grande do sul' || lig == 'Santa Catarina' || 'santa catarina'
+            res.innerHTML += 'Sua região é o <strong>Sul</strong>'
+        }
+
+
+        }
+            
+      
+    </script>
+</body>
+</html>

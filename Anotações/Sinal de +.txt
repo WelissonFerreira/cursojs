@@ -1,0 +1,2 @@
+Sinal de + tem a função de concatenação : juntar algo, adcionar
+
