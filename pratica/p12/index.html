@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Urna Eletrônica</title>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+        body {
+            height: 1800px;
+            background-color: greenyellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        p {
+            padding-top: 100px;
+        }
+    
+        h3 {
+            padding: 40px;
+        }
+        img#al {
+            max-width: 150px;
+        }
+
+        input#cand {
+            margin-top: 50px;
+        }
+
+
+
+    </style>
 </head>
 <body>
+    <h1>Eleições 2022</h1>
+
+
+    <h3>Candidatos a Governador</h3>
+
+    <img id="al" src="imagens/al.jfif" alt="Bandeira de Alagoas">
+
+    <p id="j">JHC: 40</p>
+    <img src="imagens/jhc.jfif" alt="JHC">
+    <figcaption>Candidato do Partido Social</figcaption>
+    <p>AlFREDO GASPAR : 12</p>
+    <img src="imagens/alfredo.jfif" alt="Alfredo Gaspar">
+    <figcaption>Candidato do Partido MDB</figcaption>
+    <p>FERNANDO COLLOR: 50</p>
+    <img src="imagens/collor.jfif" alt="Fernando Collor">
+    <figcaption>Candidato do Partido NOVO</figcaption>
+    <p>RODRIGO CUNHA: 44</p>
+    <img src="imagens/rodrigocunha.jfif" alt="Rodrigo Cunha">
+    <figcaption>Candidato do Partido DT</figcaption>
+
+    Digite o número de seu candidato<input type="text" name="cand" id="cand">
+
+    <input type="button" value="VOTAR" onclick="confirmar()">
+
+    <div id="res"></div>
+
+    <script>
+        function confirmar() {
+
+          var cand = window.document.querySelector('input#cand')  
+          
+          var res = window.document.querySelector('div#res')
+          
+          var lig = cand.value
+
+          
+
+          if (lig == '40') {
+            res.innerHTML += '<strong><p>Seu voto foi confirmado para o candidato JHC 40</p></strong> <br>Parabéns por exercer seu direito cidadão!</br>'
+          } else if (lig == '12') {
+            res.innerHTML += `<strong><p>Seu voto foi confirmado para o candidato ALFREDO GASPAR 12 </p></strong> <br>Parabéns por exercer seu direito cidadão!</br>`
+
+          } else if (lig == '50') {
+            res.innerHTML += `<strong><p>Seu voto foi confirmado para o candidato FERNANDO COLLOR 50 </p></strong> <br>Parabéns por exercer seu direito cidadão!</br>`
+          } else if (lig == 44) {
+            res.innerHTML += `<strong><p>Seu voto foi confirmado para o candidato RODRIGO CUNHA 44</p></strong> <br>Parabéns por exercer seu direito cidadão!</br>`
+          } else 
+            innerHTML = `<strong><p>Número inválido! Tente novamente!</p></strong>`
+          }
+
+        
+
+    </script>
     
 </body>
 </html>
