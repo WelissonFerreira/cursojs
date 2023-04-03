@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+        div {
+            margin: auto;
+            padding: 20px;
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            text-align: left;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <div>
+       Ano de Nascimento: <input type="number" name="ano" id="ano">
+
+       <input type="radio" name="masculino" id="masc"> Masculino
+       <input type="radio" name="fem" id="fem"> Feminino
+
+       <input type="button" value="Verificar" id="ano" onclick="confirmar()">
+    </div>
+
+    <div id="res"></div>
+    
+    <script>
+        function confirmar() {
+
+        var masc = window.document.querySelector('input#masc')
+        var fem = window.document.querySelector('input#fem')
+        var res = window.document.querySelector('div#res')
+
+        var lig = ano.value
+
+        if (lig >= '2004' )
+            res.innerHTML+= 'Essa pesoa é Jovem!'
+        }
+
+       
+
+
+    </script>
+    
+</body>
+</html>

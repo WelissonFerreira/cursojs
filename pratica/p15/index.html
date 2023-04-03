@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+
+
+         @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+         :root {
+            --fonte1: 'Babas Neue', 'cursive'
+         }
+
+
+         * {
+        margin: 0px;
+        padding: 0px;
+                        }
+
+
+        body {
+            font-family: 'Bebas Neue', cursive;
+            background-image: url(bnumeros3.jpg);
+           text-align: center;
+           
+    
+        }
+       
+        
+
+        input {
+            box-shadow: 2px 2px 5px ;
+            
+        }
+        
+
+
+
+        footer {
+            font-family: var(--fonte1);
+            padding-top: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+        <!--Calculadora de Soma com onclick-->
+        <h1>CALCULADORA</h1>
+        <h2>SOMA:</h2>
+        
+        <!--Input gera os botões e o espaço para escrever o número ou string, geralmente p número se cria input type "number"-->
+        
+        <input type="number" name="sn1" id="sn1">
+        <input type="number" name="sn2" id="sn2">
+        <!--Input type button value somar é o botão onde se clicka para gerar o resultado matemático + onclick = serve para adcionar um função que ao clickar será gerado o resultado, porém, ainda precisa ser feito mais coisas.-->
+        <input type="button" value="Somar" onclick="somar()">
+        <!--Criar uma div resultado é necessário para gerar o resultado, pois a div res ficará limpa para ser usada, ao contrario dos input-->
+        <div id="res"></div>
+        
+        <h2>SUBTRAÇÃO:</h2>
+        <input type="number" name="sbn1" id="sbn1">
+        <input type="number" name="sbn2" id="sbn2">
+        <input type="button" value="Subtrair" onclick="subtracao()">
+        <div id="res2"></div>
+        <h2>MULTIPLIACAÇÃO:</h2>
+        <input type="number" name="mt1" id="mt1">
+        <input type="number" name="mt2" id="mt2">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <div id="res3"></div>
+        <h2>DIVISÃO:</h2>
+        <input type="number" name="dv1" id="dv1">
+        <input type="number" name="dv2" id="dv2">
+        <input type="button" value="Dividir" onclick="dividir()">
+        <div id="res4"></div>
+
+        
+    
+
+    <script>
+        
+        function somar() {
+            let ssn1 = document.querySelector('input#sn1')
+            
+            let ssn2 = document.querySelector('input#sn2')
+
+            let res = document.getElementById('res')
+
+            let n1 = Number(sn1.value)
+            let n2 = Number(sn2.value)
+            let s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1.toFixed(2)} + ${n2.toFixed(2)} é igual a ${s.toFixed(2)}</strong> `
+        }
+
+        function subtracao() {
+            let sbt1 = document.querySelector("input#sbn1")
+            let sbt2 = document.querySelector("input#sbn2")
+
+            let res2 = document.getElementById('res2')
+
+            let ns1 = Number(sbn1.value)
+            let ns2 = Number(sbn2.value)
+
+            let s2 = ns1 - ns2
+
+            res2.innerHTML = `A subtração do número ${ns1.toFixed(2)} e o número ${ns2.toFixed(2)} é igual a ${s2.toFixed(2)}`
+
+        
+        
+        }
+
+        function multiplicar() {
+            let mtt1 = document.querySelector("input#mt1")
+
+            let mmt2 = document.querySelector("input#mt2")
+
+            let res3 = document.getElementById("res3")
+
+            let m1 = Number(mt1.value)
+            let m2 = Number(mt2.value)
+
+            let m = m1 * m2
+            res3.innerHTML = `A multiplicação do número ${m1.toFixed(2)} e o número ${m2.toFixed(2)} o resultado é ${m.toFixed(2)}`
+
+            
+     }
+
+     function dividir() {
+        let dvv1 = document.querySelector("input#dv1")
+        let dvv2 = document.querySelector("input#div2")
+
+        let res4 = document.getElementById("res4")
+
+        let d1 = Number(dv1.value)
+        let d2 = Number(dv2.value)
+
+        let dv = d1 / d2
+
+        res4.innerHTML = `A divisão do número ${d1.toFixed(2)} com o número ${d2.toFixed(2)} tem o seguinte resultado ${dv.toFixed(2)}`
+
+
+
+     }
+
+
+    </script>
+
+<footer>Criador por: <a href="https://github.com/WelissonFerreira" target="blank" rel="unfollow"><strong>Welisson Ferreira</strong></a></footer>
+</body>
+</html>

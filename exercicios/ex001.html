@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+            * {
+    margin: 0px;
+    padding: 0px;
+}
+        body {
+            background-color: rgba(128, 128, 128, 0.842);
+        text-align: center;    
+        }
+
+        h1 {
+            padding-bottom: 30px;
+            padding-top: 40px;
+        }
+       
+        main {
+            background-color: white;
+            padding: 50px;
+            width: 450px;
+            height: 300px;
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0px 0px 10px black ;
+            border-bottom-left-radius:  10px ;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+
+
+        }
+
+        img {
+
+        width: 50x;
+        height: 50x;
+        background-size: cover;
+        border-radius: 50%;
+        margin: 50px;
+
+
+
+        }
+
+        
+        
+
+        
+        
+
+
+
+        
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Hora do dia</h1>
+
+    <script>
+        var hora = new Date()
+        var agora = hora.getHours()
+        var res = agora + -15
+
+        window.document.write(`<p>Agora são ${res} horas</p>`)
+
+    </script>
+
+    <div class="circuloimg"></div>
+
+    <main>
+        <img src="imagens/floresta.jfif" alt="">
+
+    </main>
+
+
+    
+    
+    <footer>Welisson Ferreira</footer>
+
+   
+</body>
+</html>

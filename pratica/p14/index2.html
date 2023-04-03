@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperte o botão</title>
+
+</head>
+<body>
+    <h1>Aperte o Botão</h1>
+    <button>Aperte aqui!</button>
+
+    <script>
+        var button = document.querySelector("button");
+        button.onclick = function() {
+            var nome = prompt('Qual é o seu nome?')
+            var idade = prompt('Qual é sua idade?')
+            var cidade = prompt('Onde você mora? (cidade)')
+            window.alert(`Olá ${nome}, você tem ${idade} anos, você mora na cidade de ${cidade}. Seja muito bem-vindo!`)
+        }
+
+
+    </script>
+    
+</body>
+</html>
